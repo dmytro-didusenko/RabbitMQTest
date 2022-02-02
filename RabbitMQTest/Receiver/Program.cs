@@ -1,9 +1,9 @@
-﻿using RabbitMQ.Client;
+﻿using Domain.Entities;
+using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
 using System.Text;
 using System.Text.Json;
-using Domain.Entities;
 
 namespace Receiver
 {

@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Domain.Entities;
+using RabbitMQ.Client;
+using System;
 using System.Text;
 using System.Text.Json;
-using Domain.Entities;
-using RabbitMQ.Client;
 
 namespace Publisher
 {
@@ -37,7 +37,7 @@ namespace Publisher
         public static User GetUserData()
         {
             var user = new User();
-            
+
             Console.Write("Enter User's name: ");
             user.Name = Console.ReadLine();
             Console.Write("Enter User's age: ");
